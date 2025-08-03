@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import photo from "../assets/photo.jpg";
 
 // Importing the pages (you’ll need to create these)
 import Skills from "./Skills";
@@ -76,7 +77,7 @@ const App: React.FC = () => {
                   <div className="row justify-content-center align-items-center">
                     <div className="col-md-4 mb-4 mb-md-0">
                       <img
-                        src="/photo.jpg" // Replace with your actual image path
+                        src={photo} // Replace with your actual image path
                         alt="Gabriel Eremie"
                         className="img-fluid rounded-circle shadow"
                         style={{

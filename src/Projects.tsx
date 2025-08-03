@@ -1,4 +1,9 @@
 import React from "react";
+import AI1 from "../assets/AI1.png";
+import AI2 from "../assets/AI2.png";
+import HH1 from "../assets/HH1.png";
+import HH2 from "../assets/HH2.png";
+import HH3 from "../assets/HH3.png";
 
 const Projects: React.FC = () => {
   return (
@@ -10,13 +15,13 @@ const Projects: React.FC = () => {
           <div className="space-y-4">
             <img
               style={{ paddingRight: "10px" }}
-              src="/AI1.png"
+              src={AI1}
               alt="AI Quiz Builder Screenshot 1"
               className="rounded-lg shadow-md"
             />
             <img
               style={{ paddingLeft: "10px" }}
-              src="/AI2.png"
+              src={AI2}
               alt="AI Quiz Builder Screenshot 2"
               className="rounded-lg shadow-md"
             />
@@ -79,19 +84,19 @@ const Projects: React.FC = () => {
           <div className="space-y-4">
             <img
               style={{ paddingRight: "10px" }}
-              src="/HH1.jpg"
+              src={HH1}
               alt="Job Tracker Screenshot 1"
               className="rounded-lg shadow-md"
             />
             <img
               style={{ paddingLeft: "10px" }}
-              src="/HH2.png"
+              src={HH2}
               alt="Job Tracker Screenshot 2"
               className="rounded-lg shadow-md"
             />
             <img
               style={{ paddingLeft: "10px" }}
-              src="/HH3.png"
+              src={HH3}
               alt="Job Tracker Screenshot 3"
               className="rounded-lg shadow-md"
             />
