@@ -79,7 +79,7 @@ const Projects: React.FC = () => {
           <div className="space-y-4">
             <img
               style={{ paddingRight: "10px" }}
-              src="/HH1.png"
+              src="/HH1.jpg"
               alt="Job Tracker Screenshot 1"
               className="rounded-lg shadow-md"
             />
