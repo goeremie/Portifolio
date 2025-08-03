@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 // Importing the pages (you’ll need to create these)
 import Skills from "./Skills";
 import Projects from "./Projects";
-import Resume from "./Resume";
 import Contact from "./Contact";
 
 const App: React.FC = () => {
@@ -113,7 +112,6 @@ const App: React.FC = () => {
             />
             <Route path="/skills" element={<Skills />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/resume" element={<Resume />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
