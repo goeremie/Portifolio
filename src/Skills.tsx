@@ -70,6 +70,7 @@ const SkillsAndResume: React.FC = () => {
         >
           <p
             style={{
+              paddingTop: "90px",
               fontSize: "1.125rem",
               color: "#374151",
               fontWeight: "bold",
