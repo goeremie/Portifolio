@@ -1,38 +1,76 @@
 import React from "react";
-import { FaLinkedin, FaEnvelope, FaGithub, FaPhone } from "react-icons/fa";
 
 const Contact: React.FC = () => {
   return (
     <div style={{ marginTop: "100px" }}>
-      <div className="">
+      <div>
         <h2 style={{ marginBottom: "50px" }}>Get in Touch</h2>
+
         <a
           href="https://www.linkedin.com/in/gabriel-eremie-0ab159250/"
           target="_blank"
           rel="noopener noreferrer"
           className="p-4 rounded-xl shadow-md bg-white hover:bg-blue-50 transition flex justify-center"
+          style={{
+            color: "#2563EB", // blue-700
+            fontWeight: "bold",
+            fontSize: "1.5rem",
+            textDecoration: "none",
+            width: "200px",
+            textAlign: "center",
+            marginBottom: "20px",
+          }}
         >
-          <FaLinkedin size={100} className="text-blue-700" />
+          LinkedIn
         </a>
+
         <a
           href="mailto:gabrieleremie100@gmail.com"
           className="p-4 rounded-xl shadow-md bg-white hover:bg-red-50 transition flex justify-center"
+          style={{
+            color: "#DC2626", // red-600
+            fontWeight: "bold",
+            fontSize: "1.5rem",
+            textDecoration: "none",
+            width: "200px",
+            textAlign: "center",
+            marginBottom: "20px",
+          }}
         >
-          <FaEnvelope size={100} className="text-red-600" />
+          Email
         </a>
+
         <a
           href="https://github.com/goeremie"
           target="_blank"
           rel="noopener noreferrer"
           className="p-4 rounded-xl shadow-md bg-white hover:bg-gray-100 transition flex justify-center"
+          style={{
+            color: "#1F2937", // gray-800
+            fontWeight: "bold",
+            fontSize: "1.5rem",
+            textDecoration: "none",
+            width: "200px",
+            textAlign: "center",
+            marginBottom: "20px",
+          }}
         >
-          <FaGithub size={100} className="text-gray-800" />
+          GitHub
         </a>
+
         <a
           href="tel:+17785124454"
           className="p-4 rounded-xl shadow-md bg-white hover:bg-green-50 transition flex justify-center"
+          style={{
+            color: "#047857", // green-700
+            fontWeight: "bold",
+            fontSize: "1.5rem",
+            textDecoration: "none",
+            width: "200px",
+            textAlign: "center",
+          }}
         >
-          <FaPhone size={100} className="text-green-700" />
+          Phone
         </a>
       </div>
     </div>
