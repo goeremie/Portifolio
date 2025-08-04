@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import photo from "../assets/photo.jpg";
+import photo from "./assets/photo.jpg";
 
 // Importing the pages (you’ll need to create these)
 import Skills from "./Skills";

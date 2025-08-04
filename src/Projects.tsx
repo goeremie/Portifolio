@@ -1,9 +1,9 @@
 import React from "react";
-import AI1 from "../assets/AI1.png";
-import AI2 from "../assets/AI2.png";
-import HH1 from "../assets/HH1.png";
-import HH2 from "../assets/HH2.png";
-import HH3 from "../assets/HH3.png";
+import AI1 from "./assets/AI1.png";
+import AI2 from "./assets/AI2.png";
+import HH1 from "./assets/HH1.png";
+import HH2 from "./assets/HH2.png";
+import HH3 from "./assets/HH3.png";
 
 const Projects: React.FC = () => {
   return (
