@@ -93,12 +93,12 @@ const App: React.FC = () => {
                         Rivers University with a strong foundation in software
                         engineering, data structures, and algorithm design. My
                         interests lie in full-stack development, with a growing
-                        focus on the gaming industry. I’ve worked on real-world
-                        projects, including an AI-powered quiz builder and
-                        cross-platform e-commerce systems, gaining hands-on
-                        experience with tools like React, Node.js, Python, and
-                        SQL. I'm passionate about building impactful,
-                        user-centered applications and continuously refining my
+                        passion for the gaming industry. I’ve contributed to
+                        real-world projects, including an AI-powered quiz
+                        builder and cross-platform e-commerce systems, gaining
+                        hands-on experience with tools like React, Node.js,
+                        Python, and SQL. I'm driven to build impactful,
+                        user-centered applications and continually sharpen my
                         skills in modern development practices.
                       </p>
                     </div>
