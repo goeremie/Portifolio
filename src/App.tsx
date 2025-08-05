@@ -2,8 +2,7 @@ import React from "react";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import me from "./assets/me.jpg";
-
-// Importing the pages (you’ll need to create these)
+import "./index.css";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
