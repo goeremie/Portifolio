@@ -29,9 +29,14 @@ const Projects: React.FC = () => {
           <div
             className="space-y-4"
             style={{
+              marginTop: "25px",
               paddingTop: "25px",
               paddingBottom: "25px",
               fontWeight: "bold",
+              border: "5px dotted green",
+              borderRadius: "10px",
+              padding: "20px",
+              marginBottom: "25px",
             }}
           >
             <p className="text-lg">
@@ -103,7 +108,15 @@ const Projects: React.FC = () => {
           </div>
           <div
             className="space-y-4"
-            style={{ paddingTop: "25px", fontWeight: "bold" }}
+            style={{
+              marginTop: "25px",
+              paddingTop: "25px",
+              paddingBottom: "25px",
+              fontWeight: "bold",
+              border: "5px dotted green",
+              borderRadius: "10px",
+              padding: "20px",
+            }}
           >
             <p className="text-lg">
               Hire Horizon is a mobile app designed to help job seekers manage
