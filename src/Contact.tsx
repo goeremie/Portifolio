@@ -2,8 +2,11 @@ import React from "react";
 
 const Contact: React.FC = () => {
   return (
-    <div style={{ marginTop: "100px" }}>
-      <div>
+    <div
+      style={{ marginTop: "100px" }}
+      className="mt-24 px-4 overflow-x-hidden overflow-y-auto"
+    >
+      <div className="flex flex-col items-center space-y-6">
         <h2 style={{ marginBottom: "50px" }}>Get in Touch</h2>
 
         <a

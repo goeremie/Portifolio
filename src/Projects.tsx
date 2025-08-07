@@ -12,7 +12,8 @@ const Projects: React.FC = () => {
       <div className="mb-12">
         <h3 className="text-2xl font-bold mb-4">AI Quiz Builder</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
-          {/* Side-by-side AI Images 
+          {/* Side-by-side AI Images */}
+
           <div className="flex flex-col md:flex-row gap-4 mb-6 overflow-hidden">
             <img
               src={AI1}
@@ -23,19 +24,6 @@ const Projects: React.FC = () => {
               src={AI2}
               alt="AI Quiz Builder Screenshot 2"
               className="w-full md:w-1/2 object-contain rounded-lg shadow-md"
-            />
-          </div> */}
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-            <img
-              src={AI1}
-              alt="AI Quiz Builder Screenshot 1"
-              className="w-full max-w-full rounded-lg shadow-md"
-            />
-            <img
-              src={AI2}
-              alt="AI Quiz Builder Screenshot 2"
-              className="w-full max-w-full rounded-lg shadow-md"
             />
           </div>
 
