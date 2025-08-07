@@ -7,7 +7,10 @@ const Contact: React.FC = () => {
         <h2 className="mb-12 text-3xl font-bold">Get in Touch</h2>
 
         {/* Responsive Grid: 1 column on small screens, 2 columns from sm and up */}
-        <div style={{ marginTop: "50px" }} className=" gap-6">
+        <div
+          className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-md mt-12 px-4"
+          style={{ marginTop: "50px" }}
+        >
           <a
             href="https://www.linkedin.com/in/gabriel-eremie-0ab159250/"
             target="_blank"
