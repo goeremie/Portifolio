@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
           >
             Email
           </a>
-
+          {/*
           <a
             href="https://github.com/goeremie"
             target="_blank"
@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
             GitHub
           </a>
 
-          {/*
+        
 
           <a
             href="tel:+17785124454"
