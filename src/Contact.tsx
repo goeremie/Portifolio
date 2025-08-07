@@ -2,15 +2,12 @@ import React from "react";
 
 const Contact: React.FC = () => {
   return (
-    <div
-      style={{ marginTop: "100px" }}
-      className="mt-24 px-4 overflow-x-hidden overflow-y-auto"
-    >
+    <div style={{ marginTop: "100px" }} className="mt-24 px-4">
       <div className="flex flex-col items-center">
         <h2 className="mb-12 text-3xl font-bold">Get in Touch</h2>
 
         {/* Responsive Grid: 1 column on small screens, 2 columns from sm and up */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div style={{ marginTop: "50px" }} className=" gap-6">
           <a
             href="https://www.linkedin.com/in/gabriel-eremie-0ab159250/"
             target="_blank"
