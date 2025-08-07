@@ -57,6 +57,8 @@ const Contact: React.FC = () => {
             GitHub
           </a>
 
+          {/*
+
           <a
             href="tel:+17785124454"
             className="p-4 rounded-xl shadow-md bg-white hover:bg-green-50 transition flex justify-center"
@@ -69,7 +71,7 @@ const Contact: React.FC = () => {
             }}
           >
             Phone
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
