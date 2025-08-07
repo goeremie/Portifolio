@@ -17,17 +17,20 @@ const Projects: React.FC = () => {
             <img
               src={AI1}
               alt="AI Quiz Builder Screenshot 1"
-              className="w-full md:w-1/2 rounded-lg shadow-md"
+              className="w-full md:w-1/2 max-w-full rounded-lg shadow-md"
             />
             <img
               src={AI2}
               alt="AI Quiz Builder Screenshot 2"
-              className="w-full md:w-1/2 rounded-lg shadow-md"
+              className="w-full md:w-1/2 max-w-full rounded-lg shadow-md"
             />
           </div>
 
           {/* Description Box */}
-          <div className="space-y-4 border-4 border-dotted border-green-500 rounded-xl p-6 font-bold mt-6 md:mt-0">
+          <div
+            className="space-y-4 border-4 border-dotted border-green-500 rounded-xl p-6 font-bold mt-6 md:mt-0"
+            style={{ marginTop: "20px", fontWeight: "bold" }}
+          >
             <p className="text-lg">
               The AI Training Quiz Builder is a web-based application developed
               by Computer Science students at Thompson Rivers University for
@@ -93,7 +96,10 @@ const Projects: React.FC = () => {
             />
           </div>
 
-          <div className="space-y-4 border-4 border-dotted border-green-500 rounded-xl p-6 font-bold mt-6 md:mt-0">
+          <div
+            className="space-y-4 border-4 border-dotted border-green-500 rounded-xl p-6 font-bold mt-6 md:mt-0"
+            style={{ marginTop: "20px", fontWeight: "bold" }}
+          >
             <p className="text-lg">
               Hire Horizon is a mobile app designed to help job seekers manage
               and track their job applications efficiently. It addresses common
