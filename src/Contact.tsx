@@ -59,6 +59,7 @@ const Contact: React.FC = () => {
               textDecoration: "none",
               width: "100%",
               marginLeft: "11px",
+              marginRight: "3px",
             }}
           >
             GitHub
@@ -73,7 +74,8 @@ const Contact: React.FC = () => {
               fontSize: "1.5rem",
               textDecoration: "none",
               width: "100%",
-              marginLeft: "15px",
+              marginLeft: "13px",
+              marginRight: "2px",
             }}
           >
             Phone
