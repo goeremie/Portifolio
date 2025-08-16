@@ -6,6 +6,7 @@ import "./index.css";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import "./theme.css";
 
 const App: React.FC = () => {
   return (
