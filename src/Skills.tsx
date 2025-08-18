@@ -34,14 +34,15 @@ const SkillsAndResume: React.FC = () => {
               paddingLeft: 0,
               margin: 0,
             }}
+            className="skills-list"
           >
             {[
-              "JavaScript / TypeScript",
-              "React / Next.js",
-              "Node.js / Express",
-              "Firebase / Supabase",
-              "Git / GitHub",
-              "Tailwind CSS / Styled Components",
+              "JavaScript / Kotlin",
+              "React / Node.js",
+              "Figma / C",
+              "HTML / CSS",
+              "Python / C++",
+              "Firebase / Tailwind CSS",
             ].map((skill, index) => (
               <li
                 key={index}
@@ -72,7 +73,7 @@ const SkillsAndResume: React.FC = () => {
             style={{
               paddingTop: "90px",
               fontSize: "1.125rem",
-              color: "#374151",
+              color: "black",
               fontWeight: "bold",
               marginBottom: "1.5rem",
             }}
@@ -81,6 +82,7 @@ const SkillsAndResume: React.FC = () => {
           </p>
 
           <a
+            className="resume-btn"
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
@@ -90,7 +92,7 @@ const SkillsAndResume: React.FC = () => {
               textDecoration: "none",
               display: "inline-block",
               padding: "0.75rem 1.5rem",
-              backgroundColor: "#2563EB",
+              backgroundColor: "black",
               color: "white",
               borderRadius: "0.5rem",
               boxShadow:
@@ -98,12 +100,10 @@ const SkillsAndResume: React.FC = () => {
               transition: "background-color 0.3s ease",
             }}
             onMouseOver={(e) =>
-              ((e.target as HTMLAnchorElement).style.backgroundColor =
-                "#1d4ed8")
+              ((e.target as HTMLAnchorElement).style.backgroundColor = "black")
             }
             onMouseOut={(e) =>
-              ((e.target as HTMLAnchorElement).style.backgroundColor =
-                "#2563EB")
+              ((e.target as HTMLAnchorElement).style.backgroundColor = "black")
             }
           >
             DOWNLOAD

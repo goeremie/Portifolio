@@ -13,7 +13,6 @@ const Projects: React.FC = () => {
         <h3 className="text-2xl font-bold mb-4">AI Quiz Builder</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
           {/* Side-by-side AI Images */}
-
           <div className="flex flex-col md:flex-row gap-4 mb-6 overflow-hidden">
             <img
               src={AI1}
@@ -28,10 +27,7 @@ const Projects: React.FC = () => {
           </div>
 
           {/* Description Box */}
-          <div
-            className="space-y-4 border-4 border-dotted border-green-500 rounded-xl p-6 font-bold mt-6 md:mt-0"
-            style={{ marginTop: "20px", fontWeight: "bold" }}
-          >
+          <div className="project-card space-y-4 mt-6 md:mt-0 text-white">
             <p className="text-lg">
               The AI Training Quiz Builder is a web-based application developed
               by Computer Science students at Thompson Rivers University for
@@ -63,13 +59,12 @@ const Projects: React.FC = () => {
               live at{" "}
               <a
                 href="https://quizbuilder.kunovo.ai"
-                className="text-blue-500 underline"
+                className="no-underline hover:text-gray-300"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 quizbuilder.kunovo.ai
               </a>
-              .
             </p>
           </div>
         </div>
@@ -97,10 +92,7 @@ const Projects: React.FC = () => {
             />
           </div>
 
-          <div
-            className="space-y-4 border-4 border-dotted border-green-500 rounded-xl p-6 font-bold mt-6 md:mt-0"
-            style={{ marginTop: "20px", fontWeight: "bold" }}
-          >
+          <div className="project-card space-y-4 mt-6 md:mt-0 text-white">
             <p className="text-lg">
               Hire Horizon is a mobile app designed to help job seekers manage
               and track their job applications efficiently. It addresses common

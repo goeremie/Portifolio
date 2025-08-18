@@ -1,46 +1,138 @@
 /* theme.css */
 
-/* === Colors === */
-:root {
-  --bs-primary: #1abc9c;      /* Main accent */
-  --bs-secondary: #34495e;    /* Dark accent */
-  --bs-success: #2ecc71;
-  --bs-danger: #e74c3c;
-  --bs-warning: #f39c12;
-  --bs-info: #3498db;
-  --bs-light: #ecf0f1;
-  --bs-dark: #2c3e50;
-  --bs-body-color: #333;
-  --bs-body-bg: #f4f4f9;
-}
-
-/* === Typography === */
-body {
+/* === Body & App Wrapper === */
+html, body, #root, .app-wrapper {
+  height: 100%;
+  margin: 0;
+  color: black;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
+  background: linear-gradient(
+  270deg,  /* Deep maroon */
+  #b82929,  /* Maroon */
+  #c94c4c,  /* Soft red */
+  #d87b56,  /* Warm terracotta */
+  #d2691e,  /* Chocolate brown */
+  #e0a96d,  /* Golden brown */
+  #d4a981,  /* Light brown */
+  #dfcfa2   /* Off-white */
+);
+
+
+  background-size: 1000% 1000%;
+  animation: gradientShift 15s ease infinite;
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: bolder;
+  color: black;
+
+}
+
+div h2 {
+  font-weight: bolder;
+  color: black;
+}
+
+div h3{
+  font-weight: bolder;
+  color: black;
+  font-size: 30px;
+}
+
+p {
+  color: black;
+  font-weight: bold;
 }
 
 /* === Navbar === */
 .navbar {
-  background-color: var(--bs-dark);
+  background-color: black;
+  color: white;
 }
 
+/* Make only the text clickable in collapsed navbar */
+.navbar-nav .nav-item {
+  display: inline-block; /* shrink to fit content */
+}
+
+.navbar-nav .nav-link {
+  display: inline-block; /* ensure only the text is clickable */
+  padding: 0.5rem 1rem; /* optional spacing around the text */
+}
+
+
 .navbar .nav-link {
-  color: var(--bs-light);
+  color: white;
   font-weight: 500;
+}
+
+.navbar .nav-link:focus,
+.navbar .nav-link:active {
+  color: white;       /* keep the link white while focused/clicked */
+  outline: none;      /* remove default focus outline if desired */
+  box-shadow: none;   /* remove any default focus shadow */
+}
+
+.navbar .navbar-brand:focus,
+.navbar .navbar-brand:active {
+  color: white;       /* keep the brand link white while focused/clicked */
+  outline: none;      /* remove default focus outline */
+  box-shadow: none;   /* remove any default focus shadow */
+}
+
+
+
+.navbar .nav-link:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+}
+
+.navbar .navbar-brand {
+  color: #ffffff; /* White */
+  font-weight: 600;
+  font-size: 20px;
   transition: color 0.3s ease;
 }
 
-.navbar .nav-link:hover {
-  color: var(--bs-primary);
+.navbar .navbar-brand:hover {
+   transform: scale(1.1);
+  color: #ffffff; /* Golden brown hover */
 }
+
+.navbar-toggler-icon {
+  padding: 1.1rem;
+  border-radius: 5px;
+}
+
+
+
+
+.navbar-toggler {
+  padding: 0.5rem 0.75rem;
+   border: none;               /* remove default border */
+  border-radius: 5px;         /* rounded edges */
+  background-color: black;    /* match navbar background */
+  transition: all 0.3s ease;
+}
+
+
+
+.navbar-toggler:hover {
+     transform: scale(1.1);
+  background-color: black; 
+   border: 1px solid white;
+  box-shadow: 0 0 1px white;
+}
+
 
 /* === Buttons === */
 .btn-primary {
@@ -50,20 +142,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary:hover {
-  background-color: darken(var(--bs-primary), 10%);
+  background-color: #159b88; /* slightly darker on hover */
   transform: scale(1.05);
 }
 
 /* === Footer === */
 footer {
-  background-color: var(--bs-dark);
-  color: var(--bs-light);
+  background-color: black; 
+  color: #ffffff; 
   font-size: 0.9rem;
 }
 
 /* === Cards & Images === */
 .img-fluid.rounded-circle {
-  border: 4px solid var(--bs-primary);
+  border: 15px double black;
   transition: transform 0.3s ease;
 }
 
@@ -75,4 +167,123 @@ footer {
 .container {
   padding-left: 2rem;
   padding-right: 2rem;
+  background-color: transparent !important;
+}
+
+/* Skills page list items with animated background */
+.skills-list li {
+  background: linear-gradient(
+    270deg,
+    #b82929,
+    #c94c4c,
+    #d87b56,
+    #d2691e,
+    #e0a96d,
+    #d4a981,
+    #dfcfa2
+  );
+  background-size: 1000% 1000%;
+  animation: skillsGradientShift 8s ease-in-out infinite; /* slightly faster/slower than main background */
+  
+  color: black; /* ensure contrast with gradient */
+  border-radius: 0.375rem;
+  padding: 10px;
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: bold;
+  
+  /* Optional overlay for extra readability */
+  
+  border: 2px solid black; /* subtle border for extra definition */
+}
+
+/* Separate keyframes for skills list so animation is independent */
+@keyframes skillsGradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.skills-list li:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+
+
+.resume-btn:hover {
+  transform: scale(1.05); /* slight grow */
+
+}
+
+.resume-btn:active {
+  transform: scale(0.98); /* slight press effect */
+}
+
+.li-link,
+.email-link,
+.git-link,
+.phone-link {
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  display: inline-block; /* instead of inline-block */
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-color: transparent;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.li-link:hover,
+.email-link:hover,
+.git-link:hover,
+.phone-link:hover {
+  transform: scale(1.2); /* slight grow */
+}
+
+.li-link:active,
+.email-link:active,
+.git-link:active,
+.phone-link:active {
+  transform: scale(0.95); /* slight press effect */
+}
+
+/* === Project Description Cards === */
+.project-card {
+  background-color: black;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 1rem;           /* all text white */
+  padding: 1.5rem;
+  border: none;
+  box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+/* Hover effect: just scale up slightly */
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Text inside project cards */
+.project-card p {
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: bold;
+  color: white !important; 
+}
+
+/* Links inside project cards */
+.project-card a {
+  color:white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  color: #e0e0e0; /* subtle light gray on hover */
 }

@@ -1,19 +1,20 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css"; // ✅ this line
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "./index.css";
+import "./theme.css"; // ✅ must come last
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import me from "./assets/me.jpg";
-import "./index.css";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
-import "./theme.css";
 
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="d-flex flex-column min-vh-100">
+      <div className="app-wrapper d-flex flex-column min-vh-100">
         {/* Navigation Bar */}
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <nav className="navbar navbar-expand-lg sticky-top shadow">
           <div className="container">
             <Link className="navbar-brand" to="/">
               Gabriel Eremie
@@ -77,12 +78,12 @@ const App: React.FC = () => {
                   <div className="row justify-content-center align-items-center">
                     <div className="col-md-4 mb-4 mb-md-0">
                       <img
-                        src={me} // Replace with your actual image path
+                        src={me}
                         alt="Gabriel Eremie"
                         className="img-fluid rounded-circle shadow"
                         style={{
-                          width: "250px",
-                          height: "250px",
+                          width: "275px",
+                          height: "275px",
                           objectFit: "cover",
                         }}
                       />
@@ -113,7 +114,7 @@ const App: React.FC = () => {
         </div>
 
         {/* Footer */}
-        <footer className="bg-dark text-white py-3 mt-auto">
+        <footer className="py-3 mt-auto">
           <div className="container text-center">
             <small>
               &copy; {new Date().getFullYear()} Gabriel Eremie. All rights
