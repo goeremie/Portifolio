@@ -4,7 +4,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./index.css";
 import "./theme.css"; // ✅ must come last
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import me from "./assets/me.jpg";
+import gabe from "./assets/gabe.jpg";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
@@ -78,7 +78,7 @@ const App: React.FC = () => {
                   <div className="row justify-content-center align-items-center">
                     <div className="col-md-4 mb-4 mb-md-0">
                       <img
-                        src={me}
+                        src={gabe}
                         alt="Gabriel Eremie"
                         className="img-fluid rounded-circle shadow"
                         style={{
