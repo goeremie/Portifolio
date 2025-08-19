@@ -21,7 +21,7 @@ html, body, #root, .app-wrapper {
 
 
   background-size: 1000% 1000%;
-  animation: gradientShift 15s ease infinite;
+  animation: gradientShift 15s ease-in-out infinite;
 }
 @keyframes gradientShift {
   0% { background-position: 0% 50%; }
@@ -183,10 +183,10 @@ footer {
     #dfcfa2
   );
   background-size: 1000% 1000%;
-  animation: skillsGradientShift 8s ease-in-out infinite; /* slightly faster/slower than main background */
+  animation: skillsGradientShift 3s linear infinite; /* slightly faster/slower than main background */
   
   color: black; /* ensure contrast with gradient */
-  border-radius: 0.375rem;
+  border-radius: 0.5rem;
   padding: 10px;
   margin-bottom: 8px;
   text-align: center;
@@ -194,20 +194,24 @@ footer {
   
   /* Optional overlay for extra readability */
   
-  border: 2px solid black; /* subtle border for extra definition */
+  border: 3px solid black; /* subtle border for extra definition */
 }
 
 /* Separate keyframes for skills list so animation is independent */
 @keyframes skillsGradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% { background-position: 100% 50%; }
+  50% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
 
 .skills-list li:hover {
   transform: scale(1.05);
   filter: brightness(1.1);
 }
+.skills-list li {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
 
 
 
